@@ -12,6 +12,10 @@ import Familia from './components/basicos/Familia';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
+import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/formulario/Input';
+import Contador from './components/contador/Contador';
 
 export default _ => /*Aqui o '_' pode ser usado no lugar do parâmetro, assim como os (). Trata-se de uma arrow function */
 
@@ -61,7 +65,23 @@ export default _ => /*Aqui o '_' pode ser usado no lugar do parâmetro, assim co
                 </Card>
 
                 <Card titulo='Par ou Impar' color='#0887c2'>
-                    <ParOuImpar/>
+                    <ParOuImpar numero={20}/>
+                </Card>
+
+                <Card titulo='Comunicação Direta' color='#0887c2'>
+                    <DiretaPai/>
+                </Card>
+
+                <Card titulo='Comunicação Direta' color='#0887c2'>
+                    <IndiretaPai/>
+                </Card>
+
+                <Card titulo='Comunicação Direta' color='#0887c2'>
+                    <Input/>
+                </Card>
+
+                <Card titulo='Contador' color='#0887c2'>
+                    <Contador numeroInicial={10}/>
                 </Card>
             </div>
 
